@@ -1,0 +1,87 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/templates/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  border-color: rgb(207, 207, 207)!important;
+}
+
+#navbar{
+    border-color: rgb(207, 207, 207)!important;
+}
+
+.border-gray{
+  border-color: rgb(214, 213, 213)!important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  background-color: #657380!important;
+  color: white;
+  padding-top: 0.65rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+.icon-sidebar{
+  color: rgb(187, 187, 187);
+  margin-top: 0.175rem;
+}
+
+.list-group-item .activo{
+  color: white!important;
+}
+
+#sidebar-wrapper .list-group a{
+    color: rgb(187, 187, 187);
+    font-size: 0.9rem;
+}
+
+#sidebar-wrapper .list-group a:active,
+#sidebar-wrapper .list-group a:hover,
+#sidebar-wrapper .list-group a:link{
+    background-color: #3e464e!important;
+    color: white!important;
+}
+
+#sidebar-wrapper .list-group .activo{
+    background-color: #3e464e!important;
+    color: white;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+  background-color: #e3e7f6;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
