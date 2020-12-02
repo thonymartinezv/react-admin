@@ -14,8 +14,8 @@ export function Sidebar({ links, name }) {
                     </div>
                 </div>
                 <div className="list-group list-group-flush">
-                    {links.map(link => {
-                        return <LinkSidebar to={link.to} name={link.name} icon={link.icon} />
+                    {links.map((link,index) => {
+                        return <LinkSidebar key={index} to={link.to} name={link.name} icon={link.icon} />
                     })}
                 </div>
             </div>
@@ -28,7 +28,7 @@ function LinkSidebar({ name, to, icon }) {
     var Icon = icon
     const location = useLocation();
     var active = false
-    if (location.pathname == to) {
+    if (location.pathname === to) {
         active = true
     }
     return (
